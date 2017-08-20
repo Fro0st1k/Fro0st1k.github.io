@@ -5,22 +5,37 @@
 body {
     background-color: #262D37;
 }
-table {
+.table {
     margin: 50px auto;
     border-collapse: collapse;
-    background-color: #EDEEF0;
     cursor: pointer;
     font-family: 'Roboto Slab', serif;
     text-align: center;
+    background-color: #F4F8F9;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #cecfd5;
 }
 th,
 td {
     border: 1px solid #cecfd5;
-    padding: 10px 15px;
+    padding: 5px 20px 5px 20px;
     transition: 0.4s;
 }
+td img {
+    border-radius: 50%;
+}
+.table__header th {
+    padding-bottom: 7px;
+    background-color: #DEE2ED;
+    user-select: none;
+}
+.table__first-name:hover,
+.table__last-name:hover {
+    background-color: #9C9DE3;
+}
 .table__body tr:hover {
-    background-color: #58D6A1;
+    background-color: #E8F4F9;
 }
 td:first-letter {
     text-transform: uppercase;
